@@ -84,21 +84,22 @@ Options:
   -h, --help         display help for command
 ```
 
-## update
+## Diff
 
-Use the `update` command to update components in your project. This will overwrite any modifications you've made to the components, so be sure to commit your changes before running this command.
+Use the `diff` command to update components in your project. This will overwrite any modifications you've made to the components, so be sure to commit your changes before running this command.
 
 We plan on improving this command in the future to improve the update experience.
 
 ```txt
-Usage: shadcn-vue update [options] [components...]
+Usage: shadcn-vue diff [options] [components...]
 
-update components in your project
+check for updates against the registry
 
 Arguments:
   components       name of components
 
 Options:
-  -c, --cwd <cwd>  the working directory. (default: the current directory)
+  -y, --yes        skip confirmation prompt. (default: false)
+  -c, --cwd <cwd>  the working directory. defaults to the current directory. (default: "/workspaces/feedbaak.io")
   -h, --help       display help for command
 ```
